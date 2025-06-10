@@ -1,0 +1,57 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr 1fr;
+}
+
+.botao3bar {
+    background-image: url('imagens/3barrinhas.png');
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.botao3bar:hover {
+    opacity: 0.8;
+    background-color: #e2e1e1;
+}
+
+.botaoyt {
+    background-image: url('imagens/youtube-logo.png');
+    width: 126px;
+    height: 28px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.botaoyt:hover {
+    opacity: 0.9;
+}
+
+.barrapesq {
+    border: none;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    outline: none;
+}
+
+.borda {
+    display: grid;
+    border-radius: 50px;
+    height: 10px;
+    grid-template-columns: 10fr 1fr 1fr 1fr;
+    
+}

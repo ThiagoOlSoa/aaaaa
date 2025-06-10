@@ -1,0 +1,69 @@
+#include <stdio.h>
+int idade, par, impar;
+int main() {
+    printf("Digite sua idade: ");
+    scanf("%i", &idade);
+    if (idade >= 18)
+        printf("Como você tem %i anos, você é maior de idade!\n", idade);
+    else 
+        printf("Como você tem %i anos, você é menor de idade!\n", idade);
+        
+    if (idade % 2 == 0)
+        printf("Sua idade é par\n");
+    else
+        printf("Sua idade é ímpar");
+}
+
+#include <stdio.h>
+int main() {
+    float valor, desc, d, e;
+    printf("Digite um valor para um produto: ");
+    scanf("%f", &valor);
+    printf("Agora digite um desconto para esse produto: ");
+    scanf("%f", &desc);
+    d = valor - (valor * (desc/100));
+    e = valor * (desc/100);
+    printf("O valor do produto sem desconto é: R$%.2f\n", valor);
+    printf("O valor do produto com desconto é: R$%.2f\n", d);
+    printf("O valor do desconto é: R$%.2f\n", e);
+    
+}
+
+#include <stdio.h>
+int main() {
+    float n1, n2, n3, n4, m;
+    do{
+        printf("Digite a Primeira nota: ");
+        scanf("%f", &n1);
+        if (n1 < 0 || n1 > 10)
+            printf("Digite um valor entre 0 e 10!\n");
+    }while (n1 < 0 || n1 > 10);
+    
+    do{
+        printf("Digite a Segunda nota: ");
+        scanf("%f", &n2);
+        if (n2 < 0 || n2 > 10)
+            printf("Digite um valor entre 0 e 10!\n");
+    }while (n2 < 0 || n2 > 10);
+    
+   do{
+        printf("Digite a Terceira nota: ");
+        scanf("%f", &n3);
+        if (n3 < 0 || n3 > 10)
+            printf("Digite um valor entre 0 e 10!\n");
+    }while (n3 < 0 || n3 > 10);
+   
+    do{
+        printf("Digite a Quarta nota: ");
+        scanf("%f", &n4);
+        if (n4 < 0 || n4 > 10)
+            printf("Digite um valor entre 0 e 10!\n");
+    }while (n4 < 0 || n4 > 10);
+    
+    m = (n1 + n2 + n3 + n4) / 4;
+    printf("A média do aluno foi: %.2f", m);
+}
+      
+        
+         
+          
