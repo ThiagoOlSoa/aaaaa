@@ -1,3 +1,5 @@
+Meu html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,3 +124,155 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+meu css
+
+header {
+    display: grid;
+    grid-template-columns: auto 130px 1fr auto auto auto auto;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 3px;
+}
+
+
+.botao3bar {
+    background-image: url('imagens/3barrinhas.png');
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.botao3bar:hover {
+    opacity: 0.8;
+    background-color: #e2e1e1;
+    border-radius: 50%;
+}
+
+.botaoyt {
+    background-image: url('imagens/youtube-logo.png');
+    width: 126px;
+    height: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    justify-self: start;
+}
+
+.botaoyt:hover {
+    opacity: 0.9;
+}
+
+.barrapesq {
+    border: none;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    outline: none;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.borda {
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    height: 27px;
+    grid-template-columns: 1fr auto auto auto;
+    grid-template-rows: 1fr;
+    grid-column: 3;
+    align-items: center;
+    padding: 5px;
+    justify-self: center;
+    width: 100%;
+    min-width: 97px;
+    overflow: hidden;
+    gap: 3px;
+    margin-left: 10px;
+}
+
+.botaotecl {
+    background-image: url('imagens/tecladopesquisa.png');
+    width: 22px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+
+.botaotecl:hover {
+    opacity: 0.9;
+}
+
+.bordalupa{
+    border: 1px solid #ccc;
+    border-radius: 0px 20px 20px 0px;
+    height: 27px;
+    align-items: center;
+    padding: 5px;
+    justify-self: center;
+    min-width: 30px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.bordalupa:hover {
+    background-color: #e2e2e2;
+}
+
+.botaolupa {
+    background-image: url('imagens/lupa.png');
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.botaomic {
+    background-image: url('imagens/microfone.png');
+    width: 23px;
+    height: 23px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.fundomic {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
