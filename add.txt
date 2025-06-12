@@ -1,0 +1,49 @@
+.login-button {
+    border: 1px solid #3ea6ff;
+    color: #3ea6ff;
+    border-radius: 2px;
+    padding: 6px 10px;
+    transition: background-color 0.2s ease; /* Transição suave no hover */
+}
+
+.login-button:hover {
+    background-color: rgba(62, 166, 255, 0.1); /* Fundo azul claro no hover */
+}
+
+.more-options, .login-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #030303;
+    font-weight: 500;
+}
+
+.botaomic {
+    background-image: url('imagens/microfone.png');
+    width: 23px;
+    height: 23px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.fundomic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none; /* Remove a borda padrão que você tinha */
+}
+
+.fundomic:hover {
+    background-color: #e5e5e5;
+}

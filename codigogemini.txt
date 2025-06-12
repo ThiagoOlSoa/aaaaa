@@ -1,0 +1,319 @@
+css
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto ao corpo */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: white; /* Adicione um fundo branco para o header */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Sombra sutil para o header */
+}
+
+.botao3bar {
+    background-image: url('imagens/3barrinhas.png');
+    width: 24px; /* Ajuste o tamanho do ícone */
+    height: 24px; /* Ajuste o tamanho do ícone */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 8px; /* Adicione padding para facilitar o clique */
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%; /* Para o efeito de hover circular */
+}
+
+.botao3bar:hover {
+    background-color: #f0f0f0;
+}
+
+.botaoyt {
+    background-image: url('imagens/youtube-logo.png');
+    width: 100px; /* Ajuste o tamanho do logo */
+    height: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: 10px; /* Espaçamento entre o menu e o logo */
+}
+
+.botaoyt:hover {
+    opacity: 0.9;
+}
+
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px; /* Largura máxima para toda a área de pesquisa */
+    margin: 0 20px; /* Margem lateral para a barra de pesquisa */
+}
+
+.borda {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    height: 38px;
+    align-items: center;
+    flex-grow: 1;
+    background-color: white;
+    position: relative;
+    overflow: hidden; /* Garante que o input não ultrapasse a borda */
+}
+
+.barrapesq {
+    border: none;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.botaotecl {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('imagens/tecladopesquisa.png');
+    width: 22px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    opacity: 0.7; /* Suavizar a cor do ícone */
+}
+
+.botaotecl:hover {
+    opacity: 1;
+}
+
+.bordalupa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-left: none; /* Conecta com o fieldset anterior */
+    border-radius: 0px 20px 20px 0px;
+    height: 38px;
+    width: 65px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.bordalupa:hover {
+    background-color: #e5e5e5;
+}
+
+.botaolupa {
+    background-image: url('imagens/lupa.png');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre os ícones da direita */
+}
+
+.fundomic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none; /* Remove a borda padrão que você tinha */
+}
+
+.fundomic:hover {
+    background-color: #e5e5e5;
+}
+
+.botaomic {
+    background-image: url('imagens/microfone.png');
+    width: 23px;
+    height: 23px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.more-options, .login-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #030303;
+    font-weight: 500;
+}
+
+.login-button {
+    border: 1px solid #3ea6ff;
+    color: #3ea6ff;
+    border-radius: 2px;
+    padding: 6px 10px;
+    transition: background-color 0.2s ease; /* Transição suave no hover */
+}
+
+.login-button:hover {
+    background-color: rgba(62, 166, 255, 0.1); /* Fundo azul claro no hover */
+}
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade youtube</title>
+    <link rel="stylesheet" href="atv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header>
+            <button class="botao3bar"></button>
+            <button class="botaoyt"></button>
+            <div class="search-container">
+                <fieldset class="borda">
+                    <input type="text" class="barrapesq" placeholder="Pesquisar">
+                    <button class="botaotecl"></button>
+                </fieldset>
+                <fieldset class="bordalupa">
+                    <button class="botaolupa"></button>
+                </fieldset>
+            </div>
+            <div class="right-icons">
+                <div class="fundomic">
+                    <button class="botaomic"></button>
+                </div>
+                <button class="more-options">3 pontinhos</button>
+                <button class="login-button">login</button>
+            </div>
+        </header>
+
+        <main>
+            video
+        </main>
+
+        <aside>
+            propaganda
+        </aside>
+
+        <aside>
+            seção com videos laterais
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button>3 pontinhos</button>
+            </section>
+        </aside>
+        
+        <section>
+            título do vídeo
+            <section>
+                <button>foto do canal</button>
+                <button>Nome do canal</button>
+                <button>Seja Membro</button>
+                <button>Inscrever-se</button>
+                <fieldset>
+                    <button>like</button>
+                    <button>dislike</button>
+                </fieldset>
+                <button>Compartilhar</button>
+                <button>Salvar</button>
+                <button>3 pontinhos</button>
+            </section>
+            descrição </section>
+
+        <section>
+            Comentários descrição
+        </section>
+
+        <section>
+            Comentários
+            <button>Ordenar por</button>
+            <input type="text">
+            <section>
+                <img src="" alt="">
+            </section>
+            
+            <section>
+                <img src="" alt="">  
+            </section>
+            
+            <section>
+                <img src="" alt="">
+            </section>
+            
+            <section>
+                <img src="" alt="">
+            </section>
+            
+            <section>
+                <img src="" alt="">
+            </section>
+        </section>
+    </div>
+</body>
+</html>

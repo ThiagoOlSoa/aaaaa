@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade youtube</title>
+    <link rel="stylesheet" href="atv.css">
+</head>
+<body>
+  <div>
+    <header>
+        <button class="botao3bar"></button>
+        <button class="botaoyt"></button>
+        <fieldset class="borda" >
+            <input type="text" class="barrapesq" placeholder="Pesquisar">
+            <button class="botaotecl"></button>
+        </fieldset>
+        <fieldset class="bordalupa">
+            <button class="botaolupa"></button>
+        </fieldset>
+        <div class="fundomic">
+            <button class="botaomic"></button>
+        </div>
+        <button>3 pontinhos</button>
+        <button>login</button>
+    </header>
+
+    <main>
+        video
+    </main>
+
+    <aside>
+        propaganda
+    </aside>
+
+    <aside>
+        seção com videos laterais
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+    </aside>
+    
+    <section>
+        título do vídeo
+        <section>
+            <button>foto do canal</button>
+            <button>Nome do canal</button>
+            <button>Seja Membro</button>
+            <button>Inscrever-se</button>
+            <fieldset>
+                <button>like</button>
+                <button>dislike</button>
+            </fieldset>
+            <button>Compartilhar</button>
+            <button>Salvar</button>
+            <button>3 pontinhos</button>
+        </section>
+        descrição <!-- Usar accordion - bootstrap com JS-->
+    </section>
+
+    <section>
+        Comentários <!-- Usar accordion - bootstrap com JS-->
+        descrição
+    </section>
+
+    <section>
+        Comentários
+        <button>Ordenar por</button>
+        <input type="text">
+        <section>
+            <img src="" alt="">
+        </section>
+        
+        <section>
+            <img src="" alt="">  
+        </section>
+        
+        <section>
+            <img src="" alt="">
+        </section>
+        
+        <section>
+            <img src="" alt="">
+        </section>
+        
+        <section>
+            <img src="" alt="">
+        </section>
+    </section>
+  </div>
+</body>
+</html>

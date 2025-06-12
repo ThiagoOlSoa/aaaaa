@@ -1,3 +1,29 @@
+CARRO
+se o carro virar à direita, ele terá que seguir reto, depois virar à esquerda, seguir reto, depois virar a esquerada e seguir direto.
+se o carro virar à esquerda, ele terá que seguir, depois virar à direita, seguir, depois virar à direita de novo, virar à esquerda, seguir, virar à direita e seguir.
+
+IDADE
+#include <stdio.h>
+
+int main() {
+    int idade;
+    printf("Digite sua idade: ");
+    scanf("%i", &idade);
+    if (idade < 13)
+        printf("Você é uma criança!");
+    else if (idade < 18)
+        printf("Você é um adolescente!");
+    else
+        printf("Você é um adulto!");
+}
+
+IMC
+
+
+
+
+
+
 header {
     display: grid;
     grid-template-columns: auto 130px 1fr auto auto auto auto;
