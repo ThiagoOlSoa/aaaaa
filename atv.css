@@ -134,3 +134,19 @@ header {
     border: 1px solid #ccc;
     border-radius: 20px;
 }
+
+
+
+
+
+.botaologin {
+    border: 1px solid #3ea6ff;
+    color: #3ea6ff;
+    border-radius: 2px;
+    padding: 6px 10px;
+    transition: background-color 0.2s ease; /* Transição suave no hover */
+}
+
+.botaologin:hover {
+    background-color: rgba(62, 166, 255, 0.1); /* Fundo azul claro no hover */
+}

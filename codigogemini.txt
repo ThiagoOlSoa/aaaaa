@@ -186,6 +186,40 @@ header {
     background-color: rgba(62, 166, 255, 0.1); /* Fundo azul claro no hover */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 HTML
 
 <!DOCTYPE html>
