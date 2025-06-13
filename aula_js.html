@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="especial">
+        Aula JS
+    </h1>
+
+    <p id="messages">
+        Olá pessoal
+    </p>
+    <script>
+        //  comentário
+        /*  tipo o do C
+        que 
+        agrupa
+        assim   */
+        let nome = "Thiago";
+        const diassmn = 7;
+
+        console.log(nome);
+        console.log(diassmn);
+        document.write("Bom dia");
+        nome = "Maria";
+        console.log(nome);
+        
+        document.getElementById("messages").textContent = "Aula 1 JS"
+        let seila = document.createElement("p");
+        seila.textContent = "Olá, mundo!";
+        document.body.appendChild(seila);
+        document.getElementById(messages).style.color = "blue";
+        document.getElementById(messages).style.fontSize = "20px";
+
+        function mensagem(){
+            alert("Bom dia família!");
+        }
+        mensagem();
+
+        function saudacao(nome){
+            alert("Olá, " + nome);
+        }
+        saudacao("Maria");
+
+        function soma(num){
+            return num = 10;
+        }
+        soma(15);
+
+    </script>
+</body>
+</html>
