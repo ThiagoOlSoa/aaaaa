@@ -1,6 +1,6 @@
 header {
     display: grid;
-    grid-template-columns: auto 0.6fr 1fr 0.7fr auto;
+    grid-template-columns: auto 0.6fr 1fr 0.5fr auto;
     align-items: center;
     padding: 10px 5px;
     gap: 7px;
@@ -157,22 +157,31 @@ header {
     width: 40px;
     height: 40px;
     display: flex;
-    background-color: #ebebeb;
+    background-color: #f0f0f0;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+}
+
+.fundomic:hover {
+    background-color: #e0e0e0;
+}
+
+.juntarbot {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .botao3pont {
     background-image: url('imagens/3pontinhosempe.png');
-    width: 15px;
+    width: 20px;
     height: 20px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    padding: 0;
+    padding: 8px;
     cursor: pointer;
     background-color: transparent;
     border: 1px solid white;
@@ -196,16 +205,32 @@ header {
     border-radius: 50%;
 }
 
-.botaologin {
-    border: 1px solid #3ea6ff;
-    color: #3ea6ff;
-    border-radius: 2px;
-    padding: 6px 10px;
-    transition: background-color 0.2s ease;
+.bordalogin {
+    display: grid;
+    border: 1px solid #d3d3d3;
+    width: 120px;
+    height: 32px;
     background-color: transparent;
     cursor: pointer;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.botaologin:hover {
+.botaologin {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('imagens/LoginYT.png');
+    width: 101px;
+    height: 21px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.bordalogin:hover {
     background-color: rgba(62, 166, 255, 0.1); 
+    border-color: transparent;
 }
