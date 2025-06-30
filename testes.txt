@@ -1,3 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade youtube</title>
+    <link rel="stylesheet" href="Youtube.css">
+</head>
+<body>
+  <div>
+    <header>
+        <button class="botao3bar"></button>
+        <button class="botaoyt"></button>
+        <div class="juntar">
+            <div class="unir">
+                <fieldset class="borda" >
+                    <input type="text" class="barrapesq" placeholder="Pesquisar">
+                    <button class="botaotecl"></button>
+                </fieldset>
+                <fieldset class="bordalupa">
+                    <button class="botaolupa"></button>
+                </fieldset>
+            </div>
+            <div class="fundomic">
+                <button class="botaomic"></button>
+            </div>
+        </div>    
+        <div class="juntarbot">
+            <button class="botao3pont"></button>
+            <div class="bordalogin">
+                <button class="botaologin"></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/etUCt6qTl-g?si=cYx4sDTHp0TDWlOd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <aside>
+        propaganda
+    </aside>
+
+    <aside>
+        seção com videos laterais
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+
+        <section>
+            <img src="" alt="">
+            <button>3 pontinhos</button>
+        </section>
+    </aside>
+    
+    <section>
+        título do vídeo
+        <section>
+            <button>foto do canal</button>
+            <button>Nome do canal</button>
+            <button>Seja Membro</button>
+            <button>Inscrever-se</button>
+            <fieldset>
+                <button>like</button>
+                <button>dislike</button>
+            </fieldset>
+            <button>Compartilhar</button>
+            <button>Salvar</button>
+            <button>3 pontinhos</button>
+        </section>
+        descrição <!-- Usar accordion - bootstrap com JS-->
+    </section>
+
+    <section>
+        Comentários <!-- Usar accordion - bootstrap com JS-->
+        descrição
+    </section>
+
+    <section>
+        Comentários
+        <button>Ordenar por</button>
+        <input type="text">
+        <section>
+            <img src="" alt="">
+        </section>
+        
+        <section>
+            <img src="" alt="">  
+        </section>
+        
+        <section>
+            <img src="" alt="">
+        </section>
+        
+        <section>
+            <img src="" alt="">
+        </section>
+        
+        <section>
+            <img src="" alt="">
+        </section>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header {
     display: grid;
     grid-template-columns: auto 0.6fr 1fr 0.5fr auto;
@@ -54,9 +203,9 @@ header {
     height: 40px;
     margin: 0;
     padding: 0;
-    min-width: 97px;
+    min-width: 0;
     width: 100%;
-    max-width: 620px;
+    max-width: 900px;
     align-items: center;
 }
 
@@ -83,7 +232,7 @@ header {
     justify-self: center;
     width: 100%;
     min-width: 97px;
-    max-width: 620px;
+    max-width: 500px;
     overflow: hidden;
     gap: 3px;
     margin-left: 10px;
@@ -170,14 +319,12 @@ header {
 .juntar {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
 .juntarbot {
     display: flex;
     align-items: center;
     gap: 12px;
-    justify-self: end;
 }
 
 .botao3pont {
@@ -269,49 +416,3 @@ main {
     padding-left: 60px;
     box-sizing: border-box; /* Importante para padding */
 }
-
-.sidebar {
-    width: 30%;
-    float: right;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .miniatura {
-    display: flex;
-    margin-bottom: 16px;
-    cursor: pointer;
-  }
-  
-  .miniatura img {
-    width: 168px;
-    height: 94px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 8px;
-  }
-  
-  .info-video {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 60%;
-  }
-  
-  .titulo-video {
-    font-weight: bold;
-    font-size: 14px;
-    margin: 0 0 4px;
-  }
-  
-  .nome-canal {
-    color: #606060;
-    font-size: 12px;
-    margin: 0;
-  }
-
-  .container-principal {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
