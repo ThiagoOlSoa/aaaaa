@@ -6,6 +6,11 @@ header {
     gap: 7px;
 }
 
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .botao3bar {
     background-image: url('imagens/3barrinhas.png');
@@ -63,7 +68,7 @@ header {
 .barrapesq {
     border: none;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: larger;
     outline: none;
     width: 100%;
@@ -242,18 +247,17 @@ header {
     border-color: transparent;
 }
 
-/* No seu arquivo CSS (Youtube.css) */
-.video-container {
+.video {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção de aspecto 16:9 (altura / largura = 9 / 16 = 0.5625) */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    max-width: 100%; /* Garante que não ultrapasse a largura do container pai */
-    background: black; /* Fundo preto enquanto o vídeo carrega */
+    max-width: 100%; 
+    background: black; 
     border-radius: 2%;
 }
 
-.video-container iframe {
+.video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -261,57 +265,225 @@ header {
     height: 100%;
 }
 
-/* Opcional: Estilize a tag main para conter o vídeo */
 main {
-    width: 70%; /* Exemplo: Defina uma largura para a área principal do vídeo */
-    float: left; /* Ou use display: flex/grid no body para o layout principal */
-    padding: 20px;
-    padding-left: 60px;
-    box-sizing: border-box; /* Importante para padding */
+    width: 74%;
+    float: left;
+    padding: 10px;
+    padding-left: 4%;
+    box-sizing: border-box;
 }
 
-.sidebar {
-    width: 30%;
+.barralateral {
+    width: 26%;
     float: right;
     padding: 20px;
     box-sizing: border-box;
   }
   
+.todos {
+    width: 400px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.todos img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    display: block;
+}
+
   .miniatura {
     display: flex;
     margin-bottom: 16px;
     cursor: pointer;
+    position: relative;
+    align-items: flex-start;
   }
   
-  .miniatura img {
+  .videolat img {
     width: 168px;
     height: 94px;
     border-radius: 8px;
     object-fit: cover;
     margin-right: 8px;
   }
+
+  .videolat {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    margin-right: 15%;
+  }
   
-  .info-video {
+  .informacoesvid {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 60%;
+    flex: 1;
   }
   
-  .titulo-video {
-    font-weight: bold;
+  .titulolateral {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
     font-size: 14px;
     margin: 0 0 4px;
+    max-width: 200px;
   }
   
-  .nome-canal {
+  .canallateral {
     color: #606060;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     margin: 0;
   }
 
-  .container-principal {
+  .botao3pont2 {
+    background-image: url('imagens/3pontinhosempe.png');
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+  .containerprincipal {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    float: none;
   }
+
+  .titulo {
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+}
+
+.fotocanal {
+    background-image: url('imagens/canal.png');
+    width: 185px;
+    height: 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-left: 4%;
+    margin-right: 35px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0;
+}
+
+.inscrever {
+    position: absolute;
+    margin-top: 7px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 140px;
+    height: 45px;
+    border: none;
+    border-radius: 45px;
+    font-size: medium;
+}
+
+.inscrever:hover {
+    opacity: 0.8;
+}
+
+.botlikeetc {
+    background-image: url('imagens/likeeetc.png');
+    width: 550px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-left: 29%;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+}
+
+.descricao {
+    background-image: url('imagens/descricao.png');
+    width: 250px;
+    height: 85px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-left: 5.2%;
+    margin-top: 35px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    opacity: 0.85;
+}
+
+.seccomentarios {
+    margin-left: 4%;
+}
+
+.ordenar {
+    display: flex;
+    background-image: url('imagens/ordenar.png');
+    width: 120px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-left: 11%;
+    margin-top: -2%;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.9;
+}
+
+.centralizar {
+    display: flex;
+    margin-left: 4%;
+}
+
+.comentar {
+    margin-left: 1%;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    outline: none;
+    border-bottom: 1px solid #606060;
+    width: 95%;
+    max-width: 95%;
+    height: 25px;
+    position: relative;
+    margin-top: 1%;
+}
+
+.comentar:hover {
+    opacity: 0.9;
+}
+
+.logincoment {
+    background-image: url('imagens/logincoments.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+}
